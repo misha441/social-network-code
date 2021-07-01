@@ -1,0 +1,55 @@
+.paginatorWrapper{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    padding: 3px 20px 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.paginatorbuttonStyle{
+    border: none;
+    background-color: inherit;
+    font-weight: 700;
+    padding: 4px 20px;
+    color: #aaaaaa;
+}
+
+.paginatorIcon{
+    font-size: 20px;
+}
+
+.paginatorbuttonStyle:focus{
+    outline: none;
+}
+.paginatorbuttonStyle:hover{
+    background-color: #eaeaea;
+}
+
+.pageNumbersBlock{
+    width: 100%;
+}
+
+.pageNumbers{
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 700;
+    cursor: pointer;
+    color: #adadad;
+    padding: 3px 3px 0;
+    margin: 0 auto;
+    border-radius: 6px;
+    min-width: 40px;
+    height: 30px;
+    margin: 0 2px;
+    transition: all .2s linear;
+}
+
+.pageNumbers:hover{
+    background-color: #eaeaea;
+}
+
+.selectedPage{
+    font-weight: 700;
+    color: #fff;
+    background-color: #3399ff;
+}

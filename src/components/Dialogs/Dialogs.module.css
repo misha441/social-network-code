@@ -1,0 +1,261 @@
+.dialogs{
+    display:grid;
+    height: calc(100vh - 60px);
+    grid-template-columns: 3fr 8fr;
+    border-radius: 4px;
+    padding: 15px 0 0 15px;
+}
+
+.dialogUser{
+    display: flex;
+    font-size: 15px;
+    padding: 10px 6px;
+    font-weight: 500;
+    word-break: break-word;
+    transition: all .1s linear;
+}
+
+
+.dialogUser.active{
+    background-color: #f3f4f6;
+}
+
+.dialogUser:hover{
+    background-color: #f3f4f6;
+}
+
+.dialogsUserPhoto{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.dialogsItem{
+    overflow-y: scroll;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-right: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}
+
+.dialogsItem>div:first-child a{
+    border-radius:4px 4px 0px 0px;
+}
+
+.dialogsItem>div:last-child a{
+    border-radius: 0px 0px 4px 4px;
+}
+
+.dialogsItem .dialog{
+    cursor: pointer;
+}
+
+
+
+.dialog a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.dialogsItem .dialog.active{
+    color: blue;
+}
+
+.messagesBlockWrapper{
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    margin-left: 5px;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}
+
+.selectedUserInfo{
+    display: flex;
+    padding-bottom: 6px;
+}
+
+.selectedUserInfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.messagesWrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+    border-bottom: 1px solid #edeef0;
+    border-top: 1px solid #edeef0;
+}
+
+.dialogDateStyle{
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+
+}
+.dialogDateStyle span{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2px 20px;
+    margin: 5px 0;
+    border-radius: 1em;
+    color: #4a4a4a;
+}
+
+.dialogDateStyle span:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 20%;
+    height: 1px;
+    width: calc(30% - 50px);
+    background-color: #e5e5e5;
+}
+
+.dialogDateStyle span:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top:50%;
+    right: 20%;
+    height: 1px;
+    width: calc(30% - 50px);
+    background-color: #e5e5e5;
+}
+
+.massagesBlock{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.messageWrapper{
+    display: flex;
+    padding: 0 5px;
+}
+
+.message{
+    position: relative;
+    max-width: 80%;
+    padding: 8px 14px;
+    font-size: 15px;
+    margin: 5px 15px;
+    border-radius: 4px;
+    background-color: #f3f4f6;
+}
+
+.message:after{
+    content: '';
+    display: block;
+    background-color: inherit;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:12px;
+    left: -2px;
+    transform: rotateZ(45deg) translate(-50%,0) ;
+}
+
+.yourMessage .message::after{
+    right: -8px;
+    left:auto;
+}
+
+.messageText{
+    display: inline;
+}
+
+
+.messageUserPhoto img{
+    margin-top: 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.yourMessage{
+    justify-content: flex-end;
+}
+.yourMessage>div{
+    background-color: #2563eb;
+    color: #fff;
+}
+
+.messageUserPhoto{
+    background-color: transparent !important;
+}
+
+.messageWrapper span{
+    padding-left: 10px;
+    font-size: 11px;
+    color: #b5b5b5;
+}
+
+.messageWrapper.yourMessage span{
+    color: #b0c9ff;
+}
+
+.sendingField{
+    padding-top: 20px;
+}
+
+.dialogs__sendMessageForm{
+    position: relative;
+}
+
+.dialogs__sendMessageFormButton{
+
+}
+
+.dialogs__textArea {
+    width: 100%;
+    height: 40px;
+    padding: 11px;
+    padding-left: 15px;
+    padding-right: 65px;
+    border: 1px solid #a9a9a9;
+    border-radius: 20px;
+}
+
+.dialogs__textArea:focus{
+    outline: none;
+}
+
+.dialogs__textArea::-webkit-scrollbar {
+    width: 0px;
+}
+
+.dialogs__tsendButton{
+    position: absolute;
+    top:calc(50% - 17px);
+    right: 10px;
+    height: 30px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 11px;
+    color: #7280ff;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.dialogs__tsendButton:focus{
+    outline: none;
+}
+
+.followBtn:focus{
+    outline: none;
+}

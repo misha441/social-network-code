@@ -1,0 +1,19 @@
+.item {
+  margin: 15px 0;
+}
+
+.item img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.postContent{
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.postMessage{
+  max-width: 600px;
+  margin-left: 10px;
+  word-break: break-word;
+}

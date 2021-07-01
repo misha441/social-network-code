@@ -1,0 +1,78 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+textarea{
+  resize: none;
+}
+
+.scrollbarStyle::-webkit-scrollbar {
+  width: 6px;               /* width of the entire scrollbar */
+}
+
+.scrollbarStyle::-webkit-scrollbar-track {
+  background: #f9f9f9;        /* color of the tracking area */
+}
+
+.scrollbarStyle::-webkit-scrollbar-thumb {
+  background-color: #e4e4e4;    /* color of the scroll thumb */
+  border-radius: 20px;  /* creates padding around scroll thumb */
+}
+
+html {
+  height: 1px;
+  min-height: 100%;
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+body{
+  height: 1px;
+  min-height: 100%;
+  background-color: #edeef0;
+}
+
+#root{
+  height: 1px;
+  min-height: 100%;
+}
+
+.app-wrapper{
+  height: 1px;
+  min-height: 100%;
+}
+
+.mainContent{
+  min-height: 100%;
+  padding: 50px 0 10px;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.buttonStyle{
+  border: none;
+  background: #eceeef;
+  border-radius: 6px;
+  color: #041226;
+  padding: 6px 20px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  outline-color: #989898;
+  transition: background-color .1s linear;
+}
+
+
+.buttonStyle:hover{
+  background: #d9dde0;
+}

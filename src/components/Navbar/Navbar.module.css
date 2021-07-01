@@ -1,0 +1,48 @@
+.navbar {
+    padding: 15px 3px;
+}
+
+.navbarNav{
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}
+
+.navContent {
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+.navbarIcon{
+    height: 15px;
+    margin: 0 12px 0 0;
+}
+
+.navContent a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 500;
+    color: #252525;
+    padding: 11px 8px;
+    border-left: 3px solid transparent;
+    transition: all .1s linear;
+}
+
+.navbarNav li:first-child a{
+    border-radius:8px 8px 0px 0px;
+}
+
+.navbarNav li:last-child a{
+    border-radius: 0px 0px 8px 8px;
+}
+
+.navContent a:hover {
+    color: #419fd9;
+
+}
+
+.navContent a.active {
+    color: #419fd9;
+}
+

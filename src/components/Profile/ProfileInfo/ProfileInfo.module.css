@@ -1,0 +1,183 @@
+.profileImg{
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: 0 70%;
+}
+
+.descriptionBlock{
+    padding: 10px;
+    text-align: center;
+    display: grid;
+
+    grid-template-columns: 2fr 5fr;
+}
+
+.descriptionBlock__avatarBlockWrapper{
+    position: relative;
+}
+
+.descriptionBlock__avatarBlock{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 55px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}
+
+.changePhotoButton{
+    visibility: hidden;
+    width: 100%;
+}
+
+.changePhotoButton::before{
+    content:'Edit photo';
+    visibility: visible;
+    display: inline-block;
+    height: 28px;
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+    line-height: 20px;
+    padding: 4px 4px 4px 4px;
+    cursor: pointer;
+    transition: all .2s linear;
+    color: #fff;
+    background-color: #419fd9;
+    border-radius: 0 0 4px 4px;
+}
+
+.changePhotoButton:hover::before{
+    background-color: #d7dde2;
+}
+
+
+.descriptionBlock__image{
+    position: relative;
+    width: 85%;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    background-color: #fff;
+    transition: all .3s linear;
+    z-index: 2;
+}
+.descriptionBlock__imageWrapper:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:-40%;
+    left:-25%;
+    width: 150%;
+    height: 0;
+    padding-bottom: 100%;
+    background-color: #419fd9;
+    border-radius: 50%;
+}
+
+.descriptionBlock__Info{
+    text-align: left;
+    margin: 5px 0 5px 5px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}
+
+.descriptionBlock__Info form input{
+    border: 1px solid #a9a9a9;
+    width: 100%;
+}
+.descriptionBlock__Info form input::placeholder{
+    color: #a9a9a9;
+}
+.descriptionBlock__Info form textarea{
+    border: 1px solid #a9a9a9;
+    width: 100%;
+    resize: none;
+}
+.descriptionBlock__Info form textarea::placeholder{
+    color: #a9a9a9;
+}
+
+.descriptionBlock__Info hr{
+    border: 1px solid #f1f1f1;
+}
+
+.error> span{
+    color: red;
+}
+
+.descriptionBlock__mainInfo{
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e7e8ec;
+}
+
+.descriptionBlock__fullName{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: #464646;
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+
+.profileStatus{
+    font-size: 12px;
+    word-break: break-word;
+    width: 100%;
+    margin: 2px auto;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.profileStatus:hover{
+    background-color: #f0f2f5;
+}
+
+
+.profileData{
+    font-size: 13px;
+}
+
+.profileIcon{
+    margin-right: 4px;
+}
+
+.profileData> div{
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    margin: 7px 0;
+}
+
+.profileData__userInfo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #777d74;
+}
+
+.descriptionBlock span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #3f414d;
+    padding-right: 3px;
+}
+
+.profileContacts__title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+    color: #3f414d;
+}
+
+.profileContacts{
+    margin-top: 20px;
+}
+
+
+

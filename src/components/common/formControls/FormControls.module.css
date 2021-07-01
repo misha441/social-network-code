@@ -1,0 +1,21 @@
+.formControl{
+    position: relative;
+}
+
+.formControl.error{
+    margin-bottom: 15px;
+}
+
+.formControl.error textarea,
+.formControl.error input {
+    border: 1px solid #bd6464;
+}
+
+
+.formControl span{
+    position: absolute;
+    top:100%;
+    left: 10px;
+    color: #bd6464;
+    font-size: 11px;
+}
